@@ -1,57 +1,27 @@
-
-
-
-
-
 import 'dart:io';
 
 void main() {
 
-  stdout.write('Type a Year = ');
+   print('Type a Word');
 
-  int? year = int.parse(stdin.readLineSync()!);
+   String? input = stdin.readLineSync();
+   String revInput = input!.split('').reversed.join('');
 
-  if (year % 4 == 0){
+   input == revInput?
 
-    print('$year is  Leap Year');
-  } else {
-
-    print('$year is not Leap Year');
-  }
-
-  }
+         print('The word is palindrome')
+       : print("The word is not a palindrome");
 
 
+   
 
 
-
-
-
-/*print('Please Enter your number');
-
-int? number = int.parse(stdin.readLineSync()!);
-
-for(int multi = 1 ; multi <= 10; multi++){
-
-print('$number * $multi = ${number*multi}');
-
-}*/
+}
 
 
 
 
-/*print('Please Enter Your Number');
 
-  int? number = int.parse(stdin.readLineSync()!);
-
-  if( number % 2 == 0 ){
-
-    print('The Number is জোড়');
-
-  } else {
-
-    print('The Number is বিজোড়');
-  }*/
 
 
 
