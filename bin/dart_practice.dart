@@ -2,21 +2,15 @@ import 'dart:io';
 
 void main() {
 
-   print('Type a Word');
+      stdout.write("Please give a word: ");
+      String? input = stdin.readLineSync()!;
+      String revInput = input.split('').reversed.join('');
 
-   String? input = stdin.readLineSync();
-   String revInput = input!.split('').reversed.join('');
-
-   input == revInput?
-
-         print('The word is palindrome')
-       : print("The word is not a palindrome");
-
-
-   
-
-
-}
+      // Ternary operator
+      input == revInput
+          ? print("The word is palindrome")
+          : print("The word is not a palindrome");
+   }
 
 
 
