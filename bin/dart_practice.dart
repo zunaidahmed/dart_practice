@@ -2,21 +2,27 @@ import 'dart:core';
 import 'dart:io';
 
 void main() {
-  stdout.write("Please choose a number: ");
-  int? number = int.parse(stdin.readLineSync()!);
+  List <int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+ List <int> b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+ Set <int> c = {};
 
 
-  for ( int i = 1; i <= number; i++ ){
+  for (int e in a ) {
 
-    if( i % 2 == 0 ){
-      print(i);
+    for ( int d in b) {
 
+      if (e == d ){
+        c.add(e);
+
+      }
     }
-
   }
 
-    }
+  print(c.toList());
 
+  }
 
 
 
