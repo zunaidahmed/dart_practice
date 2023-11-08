@@ -1,13 +1,13 @@
 # https://dart.dev/guides/libraries/private-files
 # Created by `dart pub`
 .dart_tool/
-.idea
-lib
-test
-analysis_options.yaml
-CHANGELOG.md
-dart_practice.iml
-pubspec.lock
-pubspec.yaml
-README.md
+.idea/
+lib/
+test/
+analysis_options.yaml/
+CHANGELOG.md/
+dart_practice.iml/
+pubspec.lock/
+pubspec.yaml/
+README.md/
 
