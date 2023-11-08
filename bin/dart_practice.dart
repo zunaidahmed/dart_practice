@@ -1,31 +1,21 @@
-import 'dart:core';
 import 'dart:io';
 
 void main() {
-  List <int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 
- List <int> b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
- Set <int> c = {};
+  String userName = 'Rahim';
 
 
-  for (int e in a ) {
+  String address = 'Mirpur, Dhaka';
+  int age =25;
 
-    for ( int d in b) {
+  String fullDetails = userName + ' - ' + address; // contract
+  print(fullDetails+' - '+'$age');
+  print(fullDetails+' - '+age.toString());
 
-      if (e == d ){
-        c.add(e);
+  String userDetailsSecondary = 'User name is' + userName + ' and ' + age.toString() + ' is age';
+  userDetailsSecondary = 'User name is $userName and Age is $age'; // String interpolation
 
-      }
-    }
-  }
-
-  print(c.toList());
+  print(userDetailsSecondary);
+  print(userDetailsSecondary.length);
 
   }
-
-
-
-
-
-
