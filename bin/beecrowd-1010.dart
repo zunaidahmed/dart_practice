@@ -1,7 +1,6 @@
 
 import 'dart:io';
 void main(){
-
   String input = (stdin.readLineSync()!);
   List<String> data = input.split(' ');
   int unit = int.parse(data[1]);
