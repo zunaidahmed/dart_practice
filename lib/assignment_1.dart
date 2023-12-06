@@ -6,8 +6,7 @@ void main() {
 
   John.displayRole();
 
-  Abul.displayRole();
-}
+  Abul.displayRole();}
 
 abstract class Role {
   void displayRole();
