@@ -1,57 +1,33 @@
 
-
-
-
-
 import 'dart:io';
 
 void main() {
 
-  stdout.write('Type a Year = ');
+  Student One = Student();
 
-  int? year = int.parse(stdin.readLineSync()!);
+  One.setAge = (30+20/3);
 
-  if (year % 4 == 0){
+  print(One.getAdd);
 
-    print('$year is  Leap Year');
-  } else {
 
-    print('$year is not Leap Year');
+}
+
+
+class Student {
+
+  double? add;
+
+  double get getAdd{
+
+    return add!;
   }
 
-  }
+ void set setAge(double age){
+
+    this.add = age ;
 
 
 
+ }
 
-
-
-
-/*print('Please Enter your number');
-
-int? number = int.parse(stdin.readLineSync()!);
-
-for(int multi = 1 ; multi <= 10; multi++){
-
-print('$number * $multi = ${number*multi}');
-
-}*/
-
-
-
-
-/*print('Please Enter Your Number');
-
-  int? number = int.parse(stdin.readLineSync()!);
-
-  if( number % 2 == 0 ){
-
-    print('The Number is জোড়');
-
-  } else {
-
-    print('The Number is বিজোড়');
-  }*/
-
-
-
+}
