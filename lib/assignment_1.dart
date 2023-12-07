@@ -29,9 +29,7 @@ class Person implements Role {
   Person(this.name, this.age, this.address);
 
   @override
-  void displayRole() {
-    // TODO: implement displayRole
-  }
+  void displayRole() {}
 }
 
 class Student extends Person {
