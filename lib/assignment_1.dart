@@ -1,6 +1,7 @@
 void main() {
-  Student john = Student(1, 'B', [90, 85, 82],'John Doe', 20, '123 Main St');
-  Teacher smith = Teacher(1, ['\n-Math', '\n-English', '\n-Bangla'], 'Mr.Smith', 35, '456 Oak St');
+  Student john = Student(1, 'B', [90, 85, 82], 'John Doe', 20, '123 Main St');
+  Teacher smith = Teacher(
+      1, ['\n-Math', '\n-English', '\n-Bangla'], 'Mr.Smith', 35, '456 Oak St');
 
   print('\nStudent Information:');
   john.displayRole();
@@ -37,8 +38,8 @@ class Student extends Person {
   String grade;
   List<int> courseScores;
 
-  Student(this.studentID, this.grade, this.courseScores,String name,int age,String address)
-      : super(name,age,address);
+  Student(this.studentID, this.grade, this.courseScores, String name, int age, String address)
+      : super(name, age, address);
 
   @override
   void displayRole() {
@@ -59,8 +60,12 @@ class Teacher extends Person {
   int teacherID;
   List<String> coursesTaught;
 
+  @override
+  void displayRole() {
+    print('Role: Teacher');
+  }
+
   Teacher(
       this.teacherID, this.coursesTaught, String name, int age, String address)
       : super(name, age, address);
-
 }
