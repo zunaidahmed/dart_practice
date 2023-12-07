@@ -1,7 +1,6 @@
 void main() {
   Student john = Student(1, 'B', [90, 85, 82], 'John Doe', 20, '123 Main St');
-  Teacher smith = Teacher(
-      1, ['\n-Math', '\n-English', '\n-Bangla'], 'Mr.Smith', 35, '456 Oak St');
+  Teacher smith = Teacher(1, ['\n-Math', '\n-English', '\n-Bangla'], 'Mrs.Smith', 35, '456 Oak St');
 
   print('\nStudent Information:');
   john.displayRole();
