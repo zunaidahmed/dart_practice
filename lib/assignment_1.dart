@@ -1,12 +1,13 @@
-
 void main() {
-  Person John = Student(1, 2,[]);
-  Person Abul = Teacher(1, ['-Math\n -English\n -Bangla']);
+  Student john = Student(1, 'B', [90, 85, 82]);
 
-
-  John.displayRole();
-
-  Abul.displayRole();}
+  print('Student Information:');
+  john.displayRole();
+  print('Name:${john.name}');
+  print('Age:${john.age}');
+  print('Address:${john.address}');
+  print('Average Score:${john.averageScore().toStringAsFixed(1)}');
+}
 
 abstract class Role {
   void displayRole();
@@ -21,38 +22,29 @@ class Person implements Role {
 
   @override
   void displayRole() {
-    print('name = $name');
-    print('age = $age');
-    print('address = $address');
+    // TODO: implement displayRole
   }
 }
 
 class Student extends Person {
   int StudentID;
-  int Grade;
-  List<int> courseScores = [90,85,82];
+  String Grade;
+  List<int> courseScores;
 
-  Student(this.StudentID, this.Grade,this.courseScores) : super('John Doe', 20, '123 Main St');
-
-  @override
- void displayRole() {
-    print('Student Information:\nRole: Student\nName:$name\nAge:$age\naddress:$address\nAverage Score::\n$courseScores');
-  }
-
-  void add() {
-    print(courseScores[0+1+2] ) ;
-  }
-}
-
-class Teacher extends Person {
-  int teacherID;
-  List<String> coursesTaught;
-
-  Teacher(this.teacherID, this.coursesTaught) : super(' Mrs. Smith',35, '456 Oak St');
+  Student(this.StudentID, this.Grade, this.courseScores)
+      : super('John Doe', 20, '123 Main St');
 
   @override
   void displayRole() {
-    print('Teacher Information:\nRole: Teacher\nName:$name\nAge:$age\naddress:$address\nCourses Taught:\n$coursesTaught');
+    print('Role: Student');
   }
 
+  double averageScore() {
+    int sum = 0;
+
+    for (int add in courseScores) {
+      sum += add;
+    }
+    return sum / 3;
+  }
 }
