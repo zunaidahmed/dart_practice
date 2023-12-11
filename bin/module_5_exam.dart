@@ -2,7 +2,6 @@
 
 void main() {
 
-
   print('Original Fruit Details before Discount:');
   displayFruitDetails([
     { 'Name: Apple', 'Color: Red', 'Price:  \$2.5'},
@@ -41,11 +40,5 @@ void applyPriceDiscount(List discount){
 
 
 
-  /*for (int i = 0; i <= mapInsideList.length; i++) {}
-}
-
-void person(List x) {
-  print(x);
-}*/
 
 
