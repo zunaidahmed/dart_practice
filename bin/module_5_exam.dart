@@ -12,7 +12,7 @@ void main() {
 
   print('Fruit Details After Applying 10% Discount:');
   applyPriceDiscount([
-    { 'Name: Apple', 'Color: Red', 'Price:' '${2.5}'},
+    { 'Name: Apple', 'Color: Red', 'Price:' '${(2.5-10/100)}'},
     { 'Name: Banana', 'Color: Yellow', 'Price:' '${0.9}'},
     { 'Name: Grapes', 'Color: Purple', 'Price:' '${2.7}'},
   ]);
