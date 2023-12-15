@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  // Write your dart code from here
+  // Write your dart code from here
   String userInput = stdin.readLineSync()!;
   List<String> list = userInput.split(' ');
 
